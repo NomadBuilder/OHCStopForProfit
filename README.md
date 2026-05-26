@@ -4,27 +4,11 @@ Modern static rebuild of [stopforprofithealthcare.ca](https://stopforprofithealt
 
 ## Live site (GitHub Pages)
 
-After deployment is enabled, the site will be available at:
-
 **https://nomadbuilder.github.io/OHCStopForProfit/**
 
-## Enable GitHub Pages (one-time — pick one)
+Deployed from the `main` branch (root). Every push to `main` rebuilds the site automatically via GitHub’s built-in Pages workflow—no custom Actions workflow needed.
 
-### Option A — Deploy from branch (simplest)
-
-1. Open [Settings → Pages](https://github.com/NomadBuilder/OHCStopForProfit/settings/pages)
-2. **Build and deployment** → **Source**: **Deploy from a branch**
-3. **Branch**: `main` → folder **`/ (root)`** → **Save**
-
-The site should be live within a few minutes. No GitHub Actions required.
-
-### Option B — GitHub Actions
-
-1. Open [Settings → Pages](https://github.com/NomadBuilder/OHCStopForProfit/settings/pages)
-2. **Source**: **GitHub Actions**
-3. Re-run the [Deploy GitHub Pages](https://github.com/NomadBuilder/OHCStopForProfit/actions/workflows/pages.yml) workflow
-
-Future pushes to `main` deploy automatically.
+To change settings: [Settings → Pages](https://github.com/NomadBuilder/OHCStopForProfit/settings/pages) → **Deploy from a branch** → `main` / `/ (root)`.
 
 ## Local preview
 
