@@ -8,13 +8,23 @@ After deployment is enabled, the site will be available at:
 
 **https://nomadbuilder.github.io/OHCStopForProfit/**
 
-## Enable GitHub Pages (one-time)
+## Enable GitHub Pages (one-time — pick one)
 
-1. Open [repository Settings → Pages](https://github.com/NomadBuilder/OHCStopForProfit/settings/pages)
-2. Under **Build and deployment**, set **Source** to **GitHub Actions**
-3. Push to `main` (or re-run the **Deploy GitHub Pages** workflow)
+### Option A — Deploy from branch (simplest)
 
-The workflow in `.github/workflows/pages.yml` deploys automatically on every push to `main`.
+1. Open [Settings → Pages](https://github.com/NomadBuilder/OHCStopForProfit/settings/pages)
+2. **Build and deployment** → **Source**: **Deploy from a branch**
+3. **Branch**: `main` → folder **`/ (root)`** → **Save**
+
+The site should be live within a few minutes. No GitHub Actions required.
+
+### Option B — GitHub Actions
+
+1. Open [Settings → Pages](https://github.com/NomadBuilder/OHCStopForProfit/settings/pages)
+2. **Source**: **GitHub Actions**
+3. Re-run the [Deploy GitHub Pages](https://github.com/NomadBuilder/OHCStopForProfit/actions/workflows/pages.yml) workflow
+
+Future pushes to `main` deploy automatically.
 
 ## Local preview
 
