@@ -80,10 +80,9 @@ a:hover { color: var(--red); }
   inset: 0 0 auto 0;
   z-index: 200;
   min-height: var(--header-h);
-  background: rgba(255, 255, 255, 0.82);
-  backdrop-filter: blur(16px) saturate(1.4);
-  -webkit-backdrop-filter: blur(16px) saturate(1.4);
-  border-bottom: 1px solid rgba(18, 20, 26, 0.06);
+  background: var(--white);
+  border-bottom: 2px solid var(--ice);
+  box-shadow: 0 1px 0 rgba(116, 197, 237, 0.15);
   overflow: visible;
 }
 
@@ -122,7 +121,7 @@ a:hover { color: var(--red); }
 
 .nav-desktop a {
   text-decoration: none;
-  color: var(--ink-soft);
+  color: var(--ink);
   font-weight: 600;
   font-size: 0.9rem;
   padding: 0.5rem 1rem;
@@ -132,8 +131,8 @@ a:hover { color: var(--red); }
 
 .nav-desktop a:hover,
 .nav-desktop a[aria-current="page"] {
-  color: var(--ink);
-  background: var(--surface);
+  color: var(--red);
+  background: var(--ice);
 }
 
 .header-actions {
@@ -150,9 +149,9 @@ a:hover { color: var(--red); }
   width: 44px;
   height: 44px;
   padding: 0;
-  border: none;
+  border: 2px solid var(--ice);
   border-radius: var(--radius-sm);
-  background: var(--surface);
+  background: var(--white);
   cursor: pointer;
 }
 
